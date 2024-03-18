@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+    *{
+      margin:0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+      
+      #dropdown {
+        height: 20px;
+        border: 1px solid black;
+        height: 200px;
+        margin: 250px auto 0;
+        width: 130px;
+      }
+      #btn {
+        transform:translateX(32px);
+        margin-top: 5px;
+        cursor: pointer;
+      }
+      #dd-content {
+        width: 100px;
+        margin: 20px auto 0;
+        border: 1.5px solid teal;
+        overflow: hidden;
+        transition: all 1s;
+        cursor: pointer;
+      }
+      p {
+        width: 90px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="dropdown">
+      <button id="btn" onclick="dropDown()">Dropdown</button>
+      <div id="dd-content">
+        <p>Items 1</p>
+        <p>Items 2</p>
+        <p>Items 3</p>
+        <p>Items 4</p>
+        <p>Items 5</p>
+      </div>
+    </div>
+    <script>
+    
+     var ddMenu = document.getElementById("dd-content");
+          ddMenu.style.maxHeight = "0px";
+        
+      function dropDown() {
+        
+        if (ddMenu.style.maxHeight == "0px")
+        {
+          ddMenu.style.maxHeight = "200px"
+        }
+        else  {
+          ddMenu.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+
+   <!DOCTYPE HTML>
+<html>
+  <head>
+  <title>Javascript Practice</title>
+  <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta property="og:title" content="Nattz calculator app" />
+  <meta property="og:description" content="Simple and easy to use. perform basic arithmetic operation such as addition, subtraction, multiplication, and division. It can also handle decimal numbers." />
+  <meta property="og:image" content="preview.png" />
+  </head>
+  <body id="body" >
+    <main id="main-container">
+      
+    <div id="container" >
+       <div id="dropdown"><img src="theme.png" id="btn" onclick="dropDown()" />
+      <div id="dd-content">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        </div>
+        </div>
+    <div id="calculator">
+      <h3>Timo calculator v2.0 XR</h3>
+      <div id="input-text">
+      <input type="text" class="text-field" placeholder="0" name="display" id="display"/>
+      </div>
+      <div id="col-1">
+<input type="button" class="btn num" value="1" onclick="display.value += '1'" />
+<input type="button" class="btn num" value="2" onclick="display.value += '2'" />
+<input type="button" class="btn num" value="3" onclick="display.value += '3'" />
+<input type="button" class="btn num" value="4" onclick="display.value += '4'" />
+<input type="button" class="btn num" value="5" onclick="display.value += '5'" />
+<input type="button" class="btn num" value="6" onclick="display.value += '5'" />
+<input type="button" class="btn num" value="7" onclick="display.value += '7'" />
+<input type="button" class="btn num" value="8" onclick="display.value += '8'" />
+<input type="button" class="btn num" value="9" onclick="display.value += '9'" />
+<input type="button" class="btn num" value="0" onclick="display.value += '0'" />
+<input type="button" class="btn num" value="00" onclick="display.value += '00'" />
+<button class="btn" value="." onclick="display.value += '.' ">.
+        </button>
+    </div>
+    <div id="col-2">
+      <button class="btn " value="*" onclick="display.value += '*'">&times;</button>
+      <button class="btn" value="-" onclick="display.value += '-'">-</button>
+      <button class="btn" value="+" onclick="display.value += '+'">+</button>
+      <button class="btn" value="/" onclick="display.value += '/'">/</button>
+    <button class="btn row-2" onclick="display.value = display.value.toString().slice(0, -1)">&#9003;</button>
+      <button class="btn colspan-2" onclick="display.value = ''">AC</button>
+      <button class="btn row-1" value="=" onclick="display.value = eval(display.value)">=</button>
+    </div>
+    </div>
+      </div>
+    </main>
+    <footer >
+      <a href="">Nattz Chukwumela</a>
+      <p>click the name to contact me</p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
+   
